@@ -1,0 +1,69 @@
+.root{ }
+:root{
+  --bg: #f6f1ec; /* pale beige */
+  --card: #ffffff; /* white */
+  --muted: #6b4f4f; /* muted burgundy for text */
+  --accent: #7b1f2d; /* burgundy accent */
+  --beige: #efe7df;
+  --glass: rgba(123,31,45,0.04);
+  --max-width:1100px;
+}
+*{box-sizing:border-box}
+body{font-family:'Playfair Display', serif;background:var(--bg);color:var(--muted);margin:0;line-height:1.5}
+.container{max-width:var(--max-width);margin:0 auto;padding:28px}
+.site-header{background:transparent;border-bottom:1px solid rgba(123,31,45,0.06)}
+.header-inner{display:flex;align-items:center;justify-content:space-between}
+.logo{margin:0;font-size:1.4rem;color:var(--accent)}
+.nav a{color:var(--muted);text-decoration:none;margin-left:18px}
+.nav a:hover{color:var(--accent)}
+.hero{padding:48px 0}
+.hero-inner{display:flex;gap:28px;align-items:center}
+.hero h2{font-size:2rem;margin:0 0 8px;color:var(--accent)}
+.hero p{color:var(--muted);margin:0 0 12px}
+.hero-image{width:280px;border-radius:10px;object-fit:cover;box-shadow:0 8px 28px rgba(123,31,45,0.08)}
+.cta{display:inline-block;background:var(--accent);color:var(--card);padding:10px 14px;border-radius:8px;text-decoration:none}
+.muted{color:var(--muted);margin-left:12px}
+.about{padding:16px 0}
+.summary{list-style:none;padding:0;margin:8px 0 0}
+.summary li{color:var(--muted);margin:6px 0}
+.visuals .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.card{background:var(--card);padding:14px;border-radius:10px;box-shadow:0 6px 18px rgba(123,31,45,0.06)}
+.card h4{margin:0 0 8px;color:var(--accent)}
+.projects .project-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.project-card{background:var(--glass);padding:12px;border-radius:8px;border:1px solid rgba(123,31,45,0.04)}
+.project-card{position:relative;z-index:1}
+.project-card *{position:relative;z-index:1}
+.project-image{width:100%;border-radius:8px;margin-top:8px;object-fit:cover;max-height:260px}
+
+.projects{position:relative;overflow:visible}
+.projects::before{content:"";position:absolute;inset:-20% -10% auto auto;width:60%;height:140%;background:radial-gradient(circle at 30% 30%, rgba(123,31,45,0.10), transparent 18%), radial-gradient(circle at 70% 70%, rgba(239,231,223,0.10), transparent 25%);filter:blur(40px);transform:translateX(-10%) rotate(15deg);animation:float 9s ease-in-out infinite;pointer-events:none}
+.project-card::before{content:"";position:absolute;right:12px;top:12px;width:72px;height:72px;background:linear-gradient(135deg, rgba(123,31,45,0.14), rgba(239,231,223,0.10));border-radius:16px;filter:blur(8px);z-index:0}
+
+@keyframes float{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(-12px) rotate(6deg)}}
+
+/* Lightbox styles */
+.lightbox{position:fixed;inset:0;display:none;align-items:center;justify-content:center;padding:24px;z-index:2000}
+.lightbox.open{display:flex}
+.lightbox-backdrop{position:absolute;inset:0;background:rgba(11,7,5,0.08);backdrop-filter:blur(2px)}
+.lightbox-content{position:relative;max-width:900px;width:100%;background:var(--card);border-radius:12px;padding:18px;box-shadow:0 12px 40px rgba(123,31,45,0.06);display:flex;flex-direction:column;align-items:center}
+.lightbox-content img{max-width:100%;height:auto;border-radius:8px;display:block}
+.lightbox-close{position:absolute;right:12px;top:8px;background:transparent;border:0;color:var(--muted);font-size:28px;cursor:pointer}
+.lightbox-caption{color:var(--muted);margin-top:10px}
+
+/* Reduce or disable animations on small screens or when user prefers reduced motion */
+@media (max-width:600px){
+  .projects::before{display:none}
+  .project-card::before{display:none}
+}
+@media (prefers-reduced-motion:reduce){
+  .projects::before{animation:none}
+}
+.project-image{width:100%;border-radius:8px;margin-top:8px;object-fit:cover;max-height:260px}
+.contact{padding:20px 0}
+.site-footer{padding:16px 0;text-align:center;color:var(--muted);border-top:1px solid rgba(123,31,45,0.04)}
+canvas{width:100% !important;height:220px !important}
+
+@media (max-width:800px){
+  .hero-inner{flex-direction:column-reverse;text-align:center}
+  .hero-image{width:100%;max-width:420px}
+}

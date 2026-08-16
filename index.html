@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Data Engineer & Analyst — Personal Website</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">A’laa Ebaid</h1>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#visuals">Visuals</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div>
+          <h2>Data Engineer & Analyst</h2>
+          <p>Building reliable data pipelines, analytical models, and clear visual stories from complex data.</p>
+          <p class="cta-row"><a class="cta" href="#projects">View Projects</a> <a class="muted" href="#contact">Get in touch</a></p>
+        </div>
+        <img class="hero-image" src="D:\DEPI_visual studio\personal_website\Image .jpeg" alt="data visualization">
+      </div>
+    </section>
+
+    <section id="about" class="container about">
+      <h3>About</h3>
+      <p>A’laa Ebaid</p>
+      <p>I’m good at solving problems and analyzing data to find clear and practical solutions. I combine these skills to turn challenges into useful insights and actions. I work with tools like SQL and Python, and I create effective data visualizations to communicate results clearly.</p>
+
+      <h4>Education</h4>
+      <p>Qena National University— Faculty Of Computer Science and Artificial Intelligence (Expected graduation 2028)</p>
+      <p>National Telecommunications Institute</p>
+      <p>Degital Egyption Pioneers (DEPI)</p>
+
+      <h4>Skills</h4>
+      <ul class="summary">
+        <li><strong>Data Engineering:</strong> ETL design, data warehousing, Airflow, Spark</li>
+        <li><strong>Cloud:</strong> Microsoft Azure (services: Blob Storage, Azure Data Factory, Azure SQL), AWS basics</li>
+        <li><strong>SQL:</strong> Database design, query writing, and data management</li>
+        <li><strong>Python:</strong> Data cleaning, manipulation, data visualisation, and analysis (Pandas, NumPy)</li>
+        <li><strong>C++:</strong> Programming and problem solving</li>
+      </ul>
+    </section>
+
+    <section id="visuals" class="container visuals">
+      <h3>Visuals</h3>
+      <div class="grid">
+        <div class="card">
+          <h4>Skills Breakdown</h4>
+          <canvas id="skillsChart"></canvas>
+        </div>
+        <div class="card">
+          <h4>Tool Usage</h4>
+          <canvas id="toolsChart"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="container projects">
+      <h3>Projects</h3>
+      <div class="project-grid">
+        <article class="project-card">
+          <h4>Hotel Data Visualization Project</h4>
+            <img class="project-image lightbox-trigger" src="D:\DEPI_visual studio\personal_website\hotel project.png" alt="Hotel data visualization" data-caption="Hotel booking trends and occupancy analysis">
+          <p>Cleaned and prepared hotel booking dataset using Python (Pandas, NumPy). Created visualizations to explore booking trends, customer behavior, and occupancy rates. Presented insights through clear and structured charts.</p>
+        </article>
+        <article class="project-card">
+          <h4>Data Cleaning for Candy Dataset</h4>
+          <img class="project-image lightbox-trigger" src="D:\DEPI_visual studio\personal_website\candy project .png" alt="Candy data cleaning" data-caption="Candy data cleaning and analysis">
+          <p>Cleaned and preprocessed the dataset using Python (Pandas, NumPy). Handled missing values and removed duplicates to improve data quality.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h3>Contact</h3>
+      <p><strong>Email</strong>: <a href="mailto:alaaahmed1939@gmail.com">alaaahmed1939@gmail.com</a></p>
+      <p><strong>Address</strong>: Egypt - Qena - El qady street</p>
+      <p><strong>Phone</strong>: 01020304599</p>
+      <p><strong>LinkedIn</strong>: <a href="https://www.linkedin.com/in/a-laa-ebaid-51b785283" target="_blank">a-laa-ebaid-51b785283</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year"></span> A'laa Ebaid — Data Engineer & Analyst</div>
+  </footer>
+
+  <!-- Lightbox modal -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <div class="lightbox-backdrop" data-action="close"></div>
+    <div class="lightbox-content" role="dialog" aria-modal="true">
+      <button class="lightbox-close" aria-label="Close">×</button>
+      <img id="lightbox-img" src="" alt="">
+      <p id="lightbox-caption" class="lightbox-caption"></p>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
+</html>
