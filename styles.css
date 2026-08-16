@@ -63,6 +63,12 @@ body{font-family:'Playfair Display', serif;background:var(--bg);color:var(--mute
 .site-footer{padding:16px 0;text-align:center;color:var(--muted);border-top:1px solid rgba(123,31,45,0.04)}
 canvas{width:100% !important;height:220px !important}
 
+.card canvas{height:220px}
+
+@media (max-width:600px){
+  .card canvas{height:160px}
+}
+
 @media (max-width:800px){
   .hero-inner{flex-direction:column-reverse;text-align:center}
   .hero-image{width:100%;max-width:420px}
