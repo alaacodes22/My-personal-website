@@ -5,6 +5,7 @@ const skillsCtx = document.getElementById('skillsChart').getContext('2d');
 const toolsCtx = document.getElementById('toolsChart').getContext('2d');
 
 // Skills bar chart (personalized)
+
 new Chart(skillsCtx, {
   type: 'bar',
   data: {
