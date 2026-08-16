@@ -15,7 +15,7 @@ new Chart(skillsCtx, {
       backgroundColor: ['#7b1f2d','#b85c68','#e9dfd6','#c9a89b','#f6efe9','#a84b5b']
     }]
   },
-  options: {plugins:{legend:{display:false}},scales:{y:{beginAtZero:true}}}
+  options: {responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{y:{beginAtZero:true}}}
 });
 
 // (Projects timeline removed)
@@ -30,7 +30,7 @@ new Chart(toolsCtx, {
       backgroundColor: ['#7b1f2d','#e9dfd6','#c9a89b','#b85c68']
     }]
   },
-  options: {plugins:{legend:{position:'bottom'}}}
+  options: {responsive:true,maintainAspectRatio:false,plugins:{legend:{position:'bottom'}}}
 });
 
 // Lightbox functionality for project images
