@@ -15,7 +15,6 @@
 html {
   scroll-behavior: smooth;
 }
-
 body {
   font-family: 'Playfair Display', serif;
   background: var(--bg);
