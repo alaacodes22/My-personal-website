@@ -361,3 +361,74 @@ body {
   }
 
 }
+
+.hero {
+  padding: 25px 0;
+}
+
+.hero-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 35px;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-image {
+  width: 260px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+
+/* =========================
+   About Section Adjustment
+   ========================= */
+
+.about {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.projects {
+  padding-top: 25px;
+}
+
+.contact {
+  padding-top: 25px;
+}
+
+@media (max-width: 800px) {
+
+  .hero-inner {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .hero-image {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .hero {
+    padding: 20px 0;
+  }
+
+  .container {
+    padding: 22px;
+  }
+
+}
+@media (max-width:800px)
+
