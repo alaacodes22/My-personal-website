@@ -1,7 +1,6 @@
 document.getElementById('year').textContent = new Date().getFullYear();
 
 
-// Lightbox functionality
 (function () {
 
   const lightbox = document.getElementById('lightbox');
