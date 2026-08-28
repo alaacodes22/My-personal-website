@@ -7,7 +7,6 @@
   --glass: rgba(123, 31, 45, 0.04);
   --max-width: 1100px;
 }
-
 * {
   box-sizing: border-box;
 }
