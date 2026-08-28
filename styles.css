@@ -23,14 +23,14 @@ body {
   line-height: 1.6;
 }
 
-/* Container */
+
 .container {
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 28px;
 }
 
-/* Header */
+
 .site-header {
   background: transparent;
   border-bottom: 1px solid rgba(123, 31, 45, 0.06);
@@ -59,7 +59,6 @@ body {
   color: var(--accent);
 }
 
-/* Hero */
 .hero {
   padding: 48px 0;
 }
@@ -121,7 +120,6 @@ body {
   color: var(--accent);
 }
 
-/* About */
 .about {
   padding: 20px 28px;
 }
@@ -163,7 +161,6 @@ body {
   color: var(--accent);
 }
 
-/* Projects */
 .projects {
   position: relative;
   padding-top: 30px;
@@ -209,7 +206,6 @@ body {
   max-height: 260px;
 }
 
-/* Decorative project background */
 .projects::before {
   content: "";
   position: absolute;
@@ -237,8 +233,6 @@ body {
   position: relative;
   z-index: 1;
 }
-
-/* Contact */
 .contact {
   padding: 30px 28px;
 }
@@ -252,7 +246,6 @@ body {
   text-decoration: underline;
 }
 
-/* Footer */
 .site-footer {
   padding: 16px 0;
   text-align: center;
@@ -261,7 +254,6 @@ body {
   margin-top: 20px;
 }
 
-/* Lightbox */
 .lightbox {
   position: fixed;
   inset: 0;
@@ -323,7 +315,6 @@ body {
   text-align: center;
 }
 
-/* Tablet */
 @media (max-width: 800px) {
 
   .hero-inner {
@@ -338,7 +329,6 @@ body {
 
 }
 
-/* Mobile */
 @media (max-width: 600px) {
 
   .container {
