@@ -1,100 +1,166 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Data Analyst & Engineer — Personal Website</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="newstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <h1 class="logo">A’laa Ebaid</h1>
-      <nav class="nav">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
+    <header class="header">
+        <a href="#" class="logo"><span>A'laa Ebaid</span></a>
 
-  <main>
-    <section class="hero">
-      <div class="container hero-inner">
-        <div>
-          <h2>Data Analyst & Engineer </h2>
-          <p>Building reliable data pipelines, analytical models, and clear visual stories from complex data.</p>
-          <p class="cta-row"><a class="cta" href="#projects">View Projects</a> <a class="muted" href="#contact">Get in touch</a></p>
+        <ul class="nav-links">
+            <li>
+                <a href="#about">About</a>
+                
+            </li>
+            
+            <li>
+               <a href="#resume">Education & Skills</a>
+            </li>
+
+            <li>
+                <a href="#projects">Projects</a>
+
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+
+            </li>
+
+        </ul>
+        
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+        <a href="https://github.com/alaacodes22" target="_blank" rel="noopener noreferrer" class="visit-btn">Visit Github</a>
+
+    </header>
+
+    <section id="about" class="about">
+        <div class="about-container">
+            <img src="photo.jpeg" alt="">
+            <div class="info-box">
+
+                <div class="text">
+                    <h3>Hi, I'm</h3>
+                    <h1>A'laa Ebaid</h1>
+                    <span>Data Analyst & Data Engineer</span>
+                </div>
+
+                <div class="btn-group">
+                    <a href="https://drive.google.com/drive/folders/1s-uy0P3ZjtwY4nTjsundyV7-cjZjeEzZ?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn">Download CV</a>
+               </div>
+
+                <div class="socials">
+                    <a href="https://github.com/alaacodes22" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    
+                     <a href="https://www.linkedin.com/in/a-laa-ebaid" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-linkedin"></i>
+                     </a>
+                </div>
+
+            </div>
         </div>
-        <img class="hero-image" src="./Image%20.jpeg" alt="data visualization">
-      </div>
     </section>
 
-    <section id="about" class="container about">
-      <h3>About</h3>
-      <p>A’laa Ebaid</p>
-      <p>Computer Science student passionate about Data Analysis and Data Engineering. I enjoy working with data to uncover meaningful insights, solve complex problems, and support data-driven decision-making.
+    <section id="resume" class="resume">
 
-I have hands-on experience with SQL and Python, along with data visualization and data analysis techniques. I’m continuously developing my technical and analytical skills through projects, training, and competitive programming.
+        <p class="about-bio">
+            Computer Science student passionate about Data Analysis and Data Engineering. 
+            I enjoy working with data to uncover meaningful insights, solve complex problems, 
+            and support data-driven decision-making. I have hands-on experience with SQL and 
+            Python, along with data visualization and data analysis techniques. I'm continuously 
+            developing my technical and analytical skills through projects, training, and 
+            competitive programming. Currently, I'm looking to gain practical experience, 
+            work on real-world data problems, and grow as a Data Analyst / Data Engineer.
+        </p>
+        <br>
+        <h2 class="section-title">Education & Skills</h2>
 
-Currently, I’m looking to gain practical experience, work on real-world data problems, and grow as a Data Analyst / Data Engineer.</p>
+        <div class="resume-grid">
+            <div class="education-box">
+                <h3>Education</h3>
+                <ul>
+                    <li>Qena National University — Faculty of Computer Science and Artificial Intelligence (Expected graduation 2028)</li>
+                    <li>National Telecommunications Institute</li>
+                    <li>Digital Egypt Pioneers (DEPI)</li>
+                </ul>
+            </div>
 
-      <h4>Education</h4>
-      <p>Qena National University— Faculty Of Computer Science and Artificial Intelligence (Expected graduation 2028)</p>
-      <p>National Telecommunications Institute</p>
-      <p>Degital Egyption Pioneers (DEPI)</p>
-
-      <h4>Skills</h4>
-      <ul class="summary">
-        <li><strong>Data Engineering:</strong> ETL design, data warehousing, Airflow, Spark</li>
-        <li><strong>Cloud:</strong> Microsoft Azure (services: Blob Storage, Azure Data Factory, Azure SQL), AWS basics</li>
-        <li><strong>SQL:</strong> Database design, query writing, and data management</li>
-        <li><strong>Python:</strong> Data cleaning, manipulation, data visualisation, and analysis (Pandas, NumPy)</li>
-        <li><strong>C++:</strong> Programming and problem solving</li>
-      </ul>
+            <div class="skills-box">
+                <h3>Skills</h3>
+                <ul>
+                    <li><strong>Data Engineering:</strong> ETL design, data warehousing, Airflow, Spark</li>
+                    <li><strong>Cloud:</strong> Microsoft Azure (Blob Storage, Azure Data Factory, Azure SQL), AWS basics</li>
+                    <li><strong>SQL:</strong> Database design, query writing, and data management</li>
+                    <li><strong>Python:</strong> Data cleaning, manipulation, data visualisation, and analysis (Pandas, NumPy)</li>
+                    <li><strong>C++:</strong> Programming and problem solving</li>
+                </ul>
+            </div>
+        </div>
     </section>
 
-    <section id="projects" class="container projects">
-      <h3>Projects</h3>
-      <div class="project-grid">
-        <article class="project-card">
-          <h4>Hotel Data Visualization Project</h4>
-            <img class="project-image lightbox-trigger" src="./hotel%20project.png" alt="Hotel data visualization" data-caption="Hotel booking trends and occupancy analysis">
-          <p>Cleaned and prepared hotel booking dataset using Python (Pandas, NumPy). Created visualizations to explore booking trends, customer behavior, and occupancy rates. Presented insights through clear and structured charts.</p>
-        </article>
-        <article class="project-card">
-          <h4>Data Cleaning for Candy Dataset</h4>
-          <img class="project-image lightbox-trigger" src="./candy%20project%20.png" alt="Candy data cleaning" data-caption="Candy data cleaning and analysis">
-          <p>Cleaned and preprocessed the dataset using Python (Pandas, NumPy). Handled missing values and removed duplicates to improve data quality.</p>
-        </article>
-      </div>
-    </section>
-    
-    <section id="contact" class="container contact">
-      <h3>Contact</h3>
-      <p><strong>Email</strong>: <a href="mailto:alaaahmed1939@gmail.com">alaaahmed1939@gmail.com</a></p>
-      <p><strong>Address</strong>: Egypt - Qena - El qady street</p>
-      <p><strong>Phone</strong>: 01020304599</p>
-      <p><strong>LinkedIn</strong>: <a href="https://www.linkedin.com/in/a-laa-ebaid-51b785283" target="_blank">a-laa-ebaid-51b785283</a></p>
-    </section>
-  </main>
+    <section id="projects" class="projects">
+        <h2 class="section-title">Recent Projects</h2>
 
-  <footer class="site-footer">
-    <div class="container">© <span id="year"></span> A'laa Ebaid — Data Analyst & Engineer</div>
-  </footer>
+        <div class="projects-grid">
 
-  <div id="lightbox" class="lightbox" aria-hidden="true">
-    <div class="lightbox-backdrop" data-action="close"></div>
-    <div class="lightbox-content" role="dialog" aria-modal="true">
-      <button class="lightbox-close" aria-label="Close">×</button>
-      <img id="lightbox-img" src="" alt="">
-      <p id="lightbox-caption" class="lightbox-caption"></p>
+            <div class="projects-card">
+                <img src="candy project .png" alt="">
+                <h3>Data Cleaning for Candy Dataset</h3>
+                <p>Cleaned and preprocessed the dataset using Python (Pandas, NumPy). Handled missing values and removed duplicates to improve data quality.</p>
+                <div class="btn-group">
+                    <div class="btn">Github Repo</div>
+                </div>
+            </div>
+
+            <div class="projects-card">
+                <img src="hotel project.png" alt="">
+                <h3>Hotel Data Visualization Project</h3>
+                <p>Cleaned and prepared hotel booking dataset using Python (Pandas, NumPy). Created visualizations to explore booking trends, customer behavior, and occupancy rates. Presented insights through clear and structured charts.</p>
+                <div class="btn-group">
+                    <div class="btn">Github Repo</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- contacts and footer -->
+    <section id="contact" class="contact">
+    <h2 class="section-title">Contact Me</h2>
+
+    <div class="contact-info">
+        <div class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <span>alaaahmed1939@gmil.com</span>
+        </div>
+        <div class="contact-item">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>+20 1020304599</span>
+        </div>
     </div>
-  </div>
-  
-  <script src="script.js"></script>
+   </section>
+
+    <footer>
+        <ul>
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li><a href="#resume">Education & Skills</a></li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+        <p class="copyright">&copy; All Rights Reserved | A'laa Ebaid</p>
+    </footer>
+    <script src="newscript.js"></script>
 </body>
 </html>
